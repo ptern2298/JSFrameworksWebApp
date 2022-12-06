@@ -20,13 +20,13 @@ function ItemElement({ id, frameworkName, leadBy, officialDocs }) {
     return(
         <Card sx={{minWidth: 275}}>
             <CardContent>
-                <Typography variant='h5' component='div'>${frameworkName}</Typography>
-                <Typography variant='h5' component='div'>Lead by ${leadBy}</Typography>
+                <Typography variant='h5' component='div'>{frameworkName}</Typography>
+                <Typography variant='h5' component='div'>Lead by {leadBy}</Typography>
                 <Link href={officialDocs} underline='none' component='div'>Official Docs</Link>
             </CardContent>
             <CardActions>
                 <Button variant='outlined' color='success' size='small' href={`/edit/${id}`}>Edit</Button>
-                <Button variant='outlined' color='error' size='small' href='/' onClick={(event) => { deleteFramework() }}>Delete</Button>
+                <Button variant='outlined' color='error' size='small' href='/' onClick={ (event) => {deleteFramework()}}>Delete</Button>
             </CardActions>
         </Card>
     )

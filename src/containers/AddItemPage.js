@@ -42,9 +42,9 @@ function AddItemPage() {
             </div>
             <div>
                 <form>
-                    <TextField id='outline-basic' label='Framework name' variant='outline' onChange={event => getFrameworkName(event)}/>
-                    <TextField id='outline-basic' label='Lead by' variant='outline' onChange={event => getLeadBy(event)}/>
-                    <TextField id='outline-basic' label='Official docs url' variant='outline' onChange={event => getOfficialDocs(event)}/>
+                    <TextField id='outlined-basic' label='Framework name' variant='outlined' onChange={event => getFrameworkName(event)}/>
+                    <TextField id='outlined-basic' label='Lead by' variant='outlined' onChange={event => getLeadBy(event)}/>
+                    <TextField id='outlined-basic' label='Official docs url' variant='outlined' onChange={event => getOfficialDocs(event)}/>
                 </form>
             </div>
             <div>
