@@ -38,6 +38,8 @@ function EditItemPage() {
         index = window.location.pathname.split('/')[2];
     })
 
+    frameworks = JSON.parse(localStorage.getItem('frameworks'));
+    index = window.location.pathname.split('/')[2];
     return (
         <div>
             <div>
@@ -48,9 +50,9 @@ function EditItemPage() {
             </div>
             <div>
                 <form>
-                    <TextField id='outlined-basic' label='Framework name' variant='outlined' onChange={ event => getFrameworkName(event) }/>
-                    <TextField id='outlined-basic' label='Lead by' variant='outlined' onChange={event => getLeadBy(event) }/>
-                    <TextField id='outlined-basic' label='Official docs url' variant='outlined' onChange={ event => getOfficialDocs(event) }/>
+                    <TextField id='outlined-basic' label='Framework name' variant='outlined' defaultValue={frameworks[index].frameworkName} onChange={ event => getFrameworkName(event) }/>
+                    <TextField id='outlined-basic' label='Lead by' variant='outlined' defaultValue={frameworks[index].leadBy} onChange={event => getLeadBy(event) }/>
+                    <TextField id='outlined-basic' label='Official docs url' variant='outlined' defaultValue={frameworks[index].officialDocs} onChange={ event => getOfficialDocs(event) }/>
                 </form>
             </div>
             <div>

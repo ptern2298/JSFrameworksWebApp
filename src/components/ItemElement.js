@@ -22,7 +22,7 @@ function ItemElement({ id, frameworkName, leadBy, officialDocs }) {
             <CardContent>
                 <Typography variant='h5' component='div'>{frameworkName}</Typography>
                 <Typography variant='h5' component='div'>Lead by {leadBy}</Typography>
-                <Link href={officialDocs} underline='none' component='div'>Official Docs</Link>
+                <Link href={officialDocs} underline='none'>Official Docs</Link>
             </CardContent>
             <CardActions>
                 <Button variant='outlined' color='success' size='small' href={`/edit/${id}`}>Edit</Button>
