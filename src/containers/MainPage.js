@@ -1,10 +1,12 @@
 import React from 'react';
+import MainPageHeader from'../components/MainPageHeader';
+import ItemListView from '../components/ItemListView';
 
 function MainPage() {
     return(
         <div>
-            <div>Page header</div>
-            <div>ItemView</div>
+            <MainPageHeader/>
+            <ItemListView/>
         </div>
     )
 }

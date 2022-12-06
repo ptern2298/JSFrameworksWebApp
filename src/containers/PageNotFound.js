@@ -1,9 +1,10 @@
 import React from 'react';
+import MainPageHeader from '../components/MainPageHeader';
 
 function PageNotFound() {
     return(
         <div>
-            <div>Page header</div>
+            <MainPageHeader/>
             <div>
                 <p>Error 404: page not found</p>
             </div>
